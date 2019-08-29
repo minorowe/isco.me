@@ -707,7 +707,7 @@ li.comment:hover .comment-footer {
     color: #db2029;
 }
 
-/*屏蔽顶部bar*/
+/*屏蔽顶部条*/
 #wpadminbar {
     display: none;
 }
