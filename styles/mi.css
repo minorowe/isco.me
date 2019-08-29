@@ -707,6 +707,11 @@ li.comment:hover .comment-footer {
     color: #db2029;
 }
 
+/*屏蔽顶部bar*/
+#wpadminbar {
+    display: none;
+}
+
 /*屏幕尺寸判断*/
 @media only screen and (max-width: 1920px) {
     .wrapper {
