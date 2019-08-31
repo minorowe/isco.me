@@ -30,10 +30,14 @@ function goTop(min_height) {
             $(".rollbar-totop").fadeOut(200);
             document.getElementById("navbox").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
         }
-        if ( windowidth > 1024 ) {
-            document.getElementById("slidercontent").style.backgroundPositionY = -s*2 + "px";
-        } else {
-            document.getElementById("slidercontent").style.backgroundPositionY = -s*0.5 + "px";
+        
+        var slidercontent = document.getElementById("slidercontent");
+        if ( slidercontent != null ) {
+            if ( windowidth > 1024 ) {
+                document.getElementById("slidercontent").style.backgroundPositionY = -s*2 + "px";
+            } else {
+                document.getElementById("slidercontent").style.backgroundPositionY = -s*0.5 + "px";
+            }
         }
     });
 } 
@@ -113,8 +117,9 @@ $(function() {
     
 })();
 
-//
-if ( windowidth > 1024 ) {
+//首页动画
+var slider = document.getElementById("slider");
+if ( windowidth > 1024 && slider != null ) {
 (function(){
 const wrapperEl = document.querySelector('.wrapper');
     const numberOfEls = 90;
