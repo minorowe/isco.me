@@ -405,6 +405,7 @@ li.comment:hover .comment-footer {
     /*border-radius: 2px;*/
     background-color: #aaa;
     color: #fff;
+    padding-top: 8px;
 }
 
 .rollbar a:hover {
@@ -705,11 +706,6 @@ li.comment:hover .comment-footer {
 .creativecommons a,
 .creativecommons a:hover {
     color: #db2029;
-}
-
-/*屏蔽顶部条*/
-#wpadminbar {
-    display: none;
 }
 
 /*屏幕尺寸判断*/
