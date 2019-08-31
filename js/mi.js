@@ -30,7 +30,7 @@ function goTop(min_height) {
             $(".rollbar-totop").fadeOut(200);
             document.getElementById("navbox").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
         }
-        
+        // 内容也banner视差
         var slidercontent = document.getElementById("slidercontent");
         if ( slidercontent != null ) {
             if ( windowidth > 1024 ) {
