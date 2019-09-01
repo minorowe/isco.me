@@ -119,7 +119,7 @@ $(function() {
 
 //首页动画
 var slider = document.getElementById("slider");
-if ( windowidth > 1024 && slider != null ) {
+if ( windowidth > 1024 && slidercontent == null ) {
 (function(){
 const wrapperEl = document.querySelector('.wrapper');
     const numberOfEls = 90;
