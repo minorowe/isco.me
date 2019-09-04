@@ -118,7 +118,7 @@ $(function() {
 })();
 
 //首页动画
-var slider = document.getElementById("slider");
+var slidercontent = document.getElementById("slidercontent");
 if ( windowidth > 1024 && slidercontent == null ) {
 (function(){
 const wrapperEl = document.querySelector('.wrapper');
