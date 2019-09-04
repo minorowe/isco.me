@@ -1,3 +1,4 @@
+var slidercontent = document.getElementById("slidercontent");
 var windowidth = $(window).width();
 // 返回顶部
 function scrollTo(name, add, speed) {   
@@ -31,7 +32,6 @@ function goTop(min_height) {
             document.getElementById("navbox").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
         }
         // 内容也banner视差
-        var slidercontent = document.getElementById("slidercontent");
         if ( slidercontent != null ) {
             if ( windowidth > 1024 ) {
                 document.getElementById("slidercontent").style.backgroundPositionY = -s*2 + "px";
@@ -118,7 +118,6 @@ $(function() {
 })();
 
 //首页动画
-var slidercontent = document.getElementById("slidercontent");
 if ( windowidth > 1024 && slidercontent == null ) {
 (function(){
 const wrapperEl = document.querySelector('.wrapper');
