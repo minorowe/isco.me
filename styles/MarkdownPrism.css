@@ -163,7 +163,11 @@ pre[class*="language-"] {
     background: #f2f2f2;
 }
 
-.code-toolbar .toolbar {
+div.code-toolbar > .toolbar {
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
     background-color: darkorchid;
     padding: 10px 0px;
 }
