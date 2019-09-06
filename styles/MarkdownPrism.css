@@ -167,6 +167,7 @@ div.code-toolbar > .toolbar {
     top: 0;
     right: 0;
     width: 100%;
+    opacity: 100%;
     text-align: center;
     background-color: darkorchid;
     padding: 10px 0px;
