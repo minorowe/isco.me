@@ -152,23 +152,3 @@ pre > code.highlight {
     background: -webkit-linear-gradient(left, rgba(221, 103, 44, 0.2) 70%, rgba(221, 103, 44, 0));
     background: linear-gradient(to right, rgba(221, 103, 44, 0.2) 70%, rgba(221, 103, 44, 0))
 }
-
-/*自定义*/
-pre[class*="language-"].line-numbers {
-    padding-top: 50px;
-}
-
-code[class*="language-"],
-pre[class*="language-"] {
-    background: #f2f2f2;
-}
-
-div.code-toolbar > .toolbar {
-    top: 0;
-    right: 0;
-    width: 100%;
-    opacity: 100%;
-    text-align: center;
-    background-color: darkorchid;
-    padding: 10px 0px;
-}
