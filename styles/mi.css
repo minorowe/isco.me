@@ -800,14 +800,20 @@ li.comment:hover .comment-footer {
 }
 
 @media (max-width: 768px) {
+    svg {
+        fill: white;
+    }
+    
     .site-header,
     .navbox {
         padding: 0px;
-        background: linear-gradient(-45deg, hsla(315, 70%, 80%, 1), hsla(44, 70%, 80%, 1));
+        /*background: linear-gradient(-45deg, hsla(315, 70%, 80%, 1), hsla(44, 70%, 80%, 1));*/
+        background: #db2029;
     }
     
-    #site-header a {
-        color: crimson;
+    #site-header a,
+    .toggle-dropdown {
+        color: white;
     }
     
     .headrbar,
@@ -852,6 +858,12 @@ li.comment:hover .comment-footer {
     .creativecommons ul {
         font-size: .2em;
     }
+    
+    .more-link-wrapper,
+    .more-link {
+        width: 100%;
+        text-align: center;
+    }    
 }
 
 @media (max-width: 414px) {
@@ -884,9 +896,18 @@ li.comment:hover .comment-footer {
         float: none;
         width: 100%;
     }
+    
     p.comment-form-email,
     p.comment-form-url {
         margin-left: 0;
+    }
+    
+    .post-byline i {
+        display: none;
+    }
+    
+    .featured-image {
+        height: 170px;
     }
 }
 
