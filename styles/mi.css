@@ -17,6 +17,14 @@ img.logo {
 }
 
 /*nav*/
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
 .menu-primary-container {
     max-width: 1280px;
     margin: 0px auto;
@@ -706,6 +714,17 @@ li.comment:hover .comment-footer {
 .creativecommons a,
 .creativecommons a:hover {
     color: #db2029;
+}
+
+/*bilibili*/
+.bilibili {
+    text-align: center;
+    background: aliceblue;
+    padding: 10px;
+}
+
+.bilibili a:link {
+    text-decoration: none;
 }
 
 /*屏幕尺寸判断*/
