@@ -267,18 +267,60 @@ pre {
     border: inherit;
 }
 
+/*内容上下分页*/
+.further-reading .next,
+.further-reading .previous {
+    padding: 50px 20px;
+    float: left;
+    --widthA: 100%;
+    --widthB: calc(var(--widthA) - 10px);
+    --widthC: calc(var(--widthB)/2);
+    width: var(--widthC);
+    color: white;
+    text-shadow: 0 0 0.2em #FFF, 0 0 0.2em #000;
+}
+
+.further-reading .next {
+    margin-left: 10px;
+}
+
+.further-reading {
+    margin: 0;
+    padding: 2.25em 0;
+    border-top: none;
+    border-bottom: none;
+}
+
 /*评论*/
+.comment-list .children {
+    border-left: none;
+    padding: 0px;
+}
 .bypostauthor {
-    outline: solid 1px #E8E8E8;
+    outline: solid 1px #D8D8D8;
+    padding: 10px 5px;
 }
 
 .further-reading a {
     font-weight: 500;
 }
 
+.iconfont {
+    color: red;
+    font-size: 26px;
+    margin-left: 10px;
+    padding-top: 4px;
+    position: absolute;
+}
+
+i.iconfont.icon-admin {
+    font-size: 14px;
+    margin-top: 9px;
+}
+
 @media (min-width: 37.5em) {
     .further-reading .previous {
-        border-right: solid 1px #D8D8D8;
+        /*border-right: solid 1px #D8D8D8;*/
     }
 }
 
@@ -313,12 +355,6 @@ input.submit {
     width: 100%;
 }
 
-.comment-date {
-    font-size: 0.75em;
-    line-height: 1.5;
-    clear: both;
-}
-
 .comment-date img {
     width: inherit;
     height: inherit;
@@ -328,13 +364,15 @@ input.submit {
 }
 
 p.comment-date {
+    font-size: 0.75em;
+    line-height: 1.5;
     margin-left: 60px;
-    margin-top: -25px;
-    position: absolute;
+    margin-top: -15px;
 }
 
 span.author-name {
     font-weight: 600;
+    vertical-align: middle;
 }
 
 li.comment,
@@ -378,6 +416,12 @@ li.comment:hover .comment-footer {
 .comment-reply-link,
 .comment-edit-link {
     margin-left: 0px;
+}
+
+.comment-respond label {
+    display: inline;
+    margin-bottom: 0px;
+    vertical-align: top;
 }
 
 /*回顶部*/
@@ -716,6 +760,10 @@ li.comment:hover .comment-footer {
     color: #db2029;
 }
 
+p.comment-notes {
+    font-size: 12px;
+}
+
 /*bilibili*/
 .bilibili {
     text-align: center;
@@ -921,6 +969,10 @@ div.code-toolbar > .toolbar {
     
     .featured-image {
         height: 170px;
+    }
+    span.ua,
+    span.os {
+        display: none;
     }
 }
 
